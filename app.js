@@ -14,7 +14,7 @@ app.set("views", "./pages")
 app.set("view engine", "ejs")
 
 // Renders the HTML index file that was turned into an EJS file
-app.get("/index", (req, res) => {
+app.get("", (req, res) => {
     res.render("index", { text: "This is my first web application using EJS"})
 })
 
